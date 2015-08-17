@@ -1,0 +1,469 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+	overflow:scroll;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+*{
+	box-sizing:border-box;
+}
+/* end reset browser styles */
+.header{												/* HEADER */
+	width:1184px;
+	height:100px;
+	margin:0 auto;
+}
+.header>.img{											/* logo */
+	float:left;
+	width:230px;
+	height:100px;
+	background:url(logo.png) no-repeat 7px 0;
+}
+.header .info{											/* header info */
+	white-space:pre;
+	float:right;
+	text-align:right;
+	width:250px;
+	background:url(mob.png) no-repeat 20px 20px;
+	line-height:14px;
+	padding:10px 10px 0 0;
+	font-family:arial, sans-serif;
+	font-size:14px;
+	color:rgb(100,100,100);
+}
+.info>strong{												/* header info */
+	font-size:20px;
+	font-weight:normal;
+	line-height:20px;
+	color:rgba(100,100,100,.9);
+}
+.navwidth{												/* NAV, black width 100% */
+	width:100%;	
+	height:52px;
+	background:rgb(0,0,0);
+}
+.nav{													/* nav */
+	width:1184px;	
+	margin:0 auto;
+	height:52px;
+	padding:0 37px;
+}
+.nav>.navbutton{										/* nav buttons */
+	width:auto;
+	color:rgb(164,164,164);
+	text-decoration:none;
+	display:inline;
+	float:left;
+	padding:18px 15px;
+	font-family:verdana, sans-serif;
+	font-size:14px;
+	vertical-align:middle;
+	text-decoration:center;
+}
+.nav .wareh{												/* nav korzina */
+	clear:right;
+	float:right;
+	height:52px;
+	padding:17px 16px 19px 14px;
+}
+.nav>.navbutton:hover{
+	background-color:rgb(62, 125, 198);
+	color:rgb(256,256,256);
+}
+.nav .navbutton .krug{									/* custom */
+	display:inline-block;
+	border-radius:10px;
+	font-weight:bold;
+	font-size:13px;
+	padding:2px 7px 1px 7px;
+	background-color:rgb(120,120,120);
+	color:rgb(256,256,256);
+}
+.nav .navactive{											/* active button */
+	background-color:rgb(62, 125, 198);
+	color:rgb(256,256,256);
+}
+.center{												/* MAIN DIV */
+	width:1184px;
+	margin:20px auto;
+}
+.nav2{													/* LEFT MENU(NAV) */
+	display:block;
+	float:left;
+	width:299px;
+	padding-left:37px;
+	font-family:verdana, sans-serif;
+	font-size:12px;
+}
+h1{														/* h1 in center  */
+	display:block;
+	font-family:verdana, sans-serif;
+	font-size:21px;
+	font-weight:normal;
+	line-height:30px;
+	color:rgb(62, 125, 198);
+	border-bottom:2px solid rgba(0,0,0,.1);
+	margin-bottom:20px;
+}
+
+.nav2button{											/* left menu buttons */
+	display:block;
+	borde:1px solid rgb(200, 200, 200);
+	margin-bottom:-1px;
+	padding:12px 15px;
+	color:rgb(100,100,100);
+	text-decoration:none;
+}
+.nav2 .navbord{											/* container of left menu */
+	border:1px solid rgb(220,220,220);
+	border-bottom:2px solid rgb(240,240,240);
+	border-radius:5px;
+}
+.nav2 .navbord .bb{
+	border-bottom:1px solid rgb(220, 220, 220); 		/* left menu bottom lines */
+}
+.nav2 .navbord .aa{
+	border-top:1px solid rgb(220, 220, 220);    		/* left menu top lines */
+}
+.nav2button:hover{
+	background-color:rgb(240,240,240); 
+}
+.nav2 .nav2active{										/* active button */
+	background-color:rgb(10,10,10);
+	color:rgb(255,255,255);
+}
+.footer{												/* footer */
+	clear:both;
+	width:1140px;
+	margin:auto;
+	border-top:1px solid rgb(230,230,230);
+	padding:7px 0 13px 0;
+	font-family:verdana, sans-serif;
+	font-size:12px;
+	color:rgb(150,150,150)
+}
+.main{													/* MAIN */
+	width:884px;
+	height:auto;
+	float:right;
+    margin-bottom:30px;
+	padding:0 0 0 29px;
+}
+.bootstrap{												/* IMG MAIN PAGE */
+	width:100%;
+	height:265px;
+	margin-bottom:30px;
+	border-radius:5px;
+	background:none;
+	font-family:arial;
+	font-size:40px;
+	line-height:40px;
+	}
+.main .bootstrap .boots{									/* class for left and right buttons */
+	width:150px;
+	height:265px;
+	display:block;
+	text-align:center;
+	vertical-align:middle;
+	position:relative;
+}
+.main .bootstrap .absolute{								/* for background-image */
+	position:absolute;
+	text-align:center;
+}
+.main .bootstrap .left{									/* gradient left */
+	position:absolute;
+	z-index:10;
+	float:left;
+	background-image:-webkit-linear-gradient(left, rgba(100,100,100,.5), rgba(255,255,255,.1));
+	background-image:-moz-linear-gradient(left, rgba(100,100,100,.5), rgba(255,255,255,.1));
+	background-image:-o-linear-gradient(left, rgba(100,100,100,.5), rgba(255,255,255,.1));
+	background-image:linear-gradient(left, rgba(100,100,100,.5), rgba(255,255,255,.1));
+}
+.main .bootstrap .right{									/* grabient right */
+	z-index:10;
+	float:right;
+	background-image:-webkit-linear-gradient(right, rgba(100,100,100,.5), rgba(255,255,255,.1));
+	background-image:-moz-linear-gradient(right, rgba(100,100,100,.5), rgba(255,255,255,.1));
+	background-image:-o-linear-gradient(right, rgba(100,100,100,.5), rgba(255,255,255,.1));
+	background-image:linear-gradient(right, rgba(100,100,100,.5), rgba(255,255,255,.1));
+}
+.main .bootstrap .left:hover{							/* hover */
+	float:left;
+	background-image:-webkit-linear-gradient(left, rgba(100,100,100,.7), rgba(255,255,255,.3));
+	background-image:-moz-linear-gradient(left, rgba(100,100,100,.7), rgba(255,255,255,.3));
+	background-image:-o-linear-gradient(left, rgba(100,100,100,.7), rgba(255,255,255,.3));
+	background-image:linear-gradient(left, rgba(100,100,100,.7), rgba(255,255,255,.3));
+}
+.main .bootstrap .right:hover{							/* hover */
+	float:right;
+	background-image:-webkit-linear-gradient(right, rgba(100,100,100,.7), rgba(255,255,255,.3));
+	background-image:-moz-linear-gradient(right, rgba(100,100,100,.7), rgba(255,255,255,.3));
+	background-image:-o-linear-gradient(right, rgba(100,100,100,.7), rgba(255,255,255,.3));
+	background-image:linear-gradient(right, rgba(100,100,100,.7), rgba(255,255,255,.3));
+}
+.main .ramkatovar{										/* INFO O TOVARAH,  class ramki*/
+	width:100%;
+	height:315px;
+	background:rgb(238,238,238);
+	margin-bottom:35px;
+	border-radius:5px;
+	font-family:verdana, sans-serif;
+}
+.ramkatovar .rightinfo{									/* visota pravogo bloka*/
+	height:245px;	
+}
+.main .ramkatovar>.img{									/* div dlya imga */
+	width:290px;
+	display:block;
+	text-align:center;
+	padding:20px;
+	float:left;
+}
+.main .ramkatovar>img{									/* svoystva img */
+	float:left;
+	display:inline-block;
+	max-width:280px;
+	max-height:200px;
+}
+.main .nametovar{										/* naimenovanie */
+	display:block;
+	float:right;
+	width:530px;
+	padding:30px 0 20px 0;
+	border-bottom:1px solid rgb(200,200,200);
+	font-weight:bold;
+	color:rgb(100,100,100);
+	margin-right:20px;
+}
+.main .svoistvatovar{									/* svoystva */
+	display:block;
+	float:right;
+	width:530px;
+	margin:20px 0 20px 0;
+	padding-right:40px;
+	font-size:12px;
+	margin-right:20px;
+	line-height:18px;
+}
+.main .cenatovar{										/* cena */
+	display:block;
+	float:right;
+	width:530px;
+	padding:20px 0 30px 0;
+	border-top:1px solid rgb(200,200,200);
+	font-weight:bold;
+	color:rgb(100,100,100);
+	margin-right:20px;
+}
+.main .ramkatovar>.footer{								/* footer dlya ramki */
+	display:block;
+	clear:both;
+	width:95%;
+	margin:0 auto;
+	border-color:rgb(200,200,200);
+	text-align:right;
+	padding:0 20px;
+}
+.main .dobavittovar{										/* knopka dlya tovara */
+	display:inline-block;
+	background-color:rgb(81, 182, 4);
+	color:rgb(255,255,255);
+	width:auto;
+	padding:10px 15px;
+	margin:15px -20px 15px 0;
+	font-size:14px;
+	border-radius:5px;
+	font-family:verdana, sans-serif;
+}
+.main .dobavittovar:hover{
+	background-color:rgb(81, 152, 4)
+}
+.main .catalogelement{									/* CATALOG, stil dlya elementa */
+	display:block;
+	width:260px;
+	float:left;
+	border:1px solid rgb(200,200,200);
+	margin-right:30px;
+	margin-bottom:40px;
+	border-radius:3px;
+	text-align:center;
+	font-family:verdana, sans-serif;
+	font-size:12px;
+	line-height:16px;
+}
+.main  .catalog .lastinrow{								/* posledniy element v linii */
+	margin-right:0px
+}
+.main .catalogelement:hover{
+	border:1px solid rgb(62, 125, 198);
+}
+.main .catalogelement>img{								/* img elementa */
+	display:inline-block;
+}
+.main .catalogelement .cataloginfo{						/* border dlya bloka */
+	border-top:1px solid rgb(200,200,200);
+}
+.main .cataloginfo{										/* blok dlya infi */
+	background-color:rgb(250,250,250);
+	padding:15px 15px 0 15px;
+	height:155px;
+}
+.probel{												/* if img is shit we need margin */
+	margin-bottom:19px;
+}
+.main .cataloginfo a{									/* style for links in elements */
+	text-decoration:none;
+	color:rgb(62, 125, 198);
+}
+.main .cataloginfo>a{									/* viravninanie nalevo v ygol */
+	display:block;
+	float:left;
+}
+.main .cataloginfo a:hover{
+	text-decoration:underline;
+	color:rgb(4, 50, 100);
+}
+.main .cataloginfo .catalogcena{							/* cena napravo v ygol */
+	display:block;
+	float:right;
+	
+}
+.main .cataloginfo .cataloglessinfo{						/* less info o elemente */
+	clear:both;
+	margin-top:30px;
+}
+.main .cataloginfo .dobavittovar{						/* knopka yzhe est, viravnivaem */
+	margin-top:15px;
+}
+.main .catalogpages{										/* MAIN PAGES, stili knopok */
+	clear:left;
+	text-align:center;
+}
+.main .catalogpage{										/* sami knopki */
+	display:inline-block;
+	width:auto;
+	height:auto;
+	padding:5px 10px;
+	border:1px solid rgb(200,200,200);
+	font-family:verdana, sans-serif;
+	line-height:16px;
+	font-size:12px;
+	text-decoration:none;
+	margin-left:-5px;
+	color:rgb(62, 125, 198);
+}
+.main .catalogpage:hover{
+	background-color:rgb(230,230,230);
+	color:rgb(4, 50, 100);
+}
+.main .catalogpages .catalogpageactive{					/* activnaya knopka */
+	background-color:rgb(62, 125, 198);
+	color:rgb(255,255,255);
+}
+.main .catalogpages .none{								/* dlya pervoy i posledney */
+	color:rgba(4, 25, 50,.5);
+}
+.main .catalogpages .none:hover{
+	background-color:red
+}
+.main .manytext{											/* mnogo teksta ABOUT SERVICES */
+	display:block;
+	font-family:verdana, sans-serif;
+	white-space:pre-wrap;
+	text-align:justify;
+	font-size:14px;
+	line-height:18px;
+}
+.main .manytext .marginleft{								/* margin for ol */
+	margin-left:55px;
+}
+.main .manytext .melt{									/* img about */
+	display:block;
+	float:right;
+	margin:20px 0 20px 20px;
+	box-shadow:-4px 4px 3px rgba(0,0,0,.3);
+}
+.main .manytext .uslugi{									/* img services */
+	display:block;
+	float:left;
+	margin:20px 20px 20px 0;
+}
+.main .contactslessinfo{									/* CONTACTS 1st div */
+	display:block;
+	font-family:verdana, sans-serif;
+	font-size:14px;
+	line-height:16px;
+	font-weight:normal;
+	white-space:pre-wrap;
+	color:rgba(80,80,80,.7);
+	margin:-20px 0 20px 0;
+}
+.main .contactslessinfo strong{							/* phone number */
+	display:block;
+	font-family:verdana, sans-serif;
+	font-size:24px;
+	line-height:28px;
+	font-weight:normal;
+	color:rgba(80,80,80,.7);
+	margin-bottom:-10px;
+}
+.main .contact{											/* kartochka s infoi */
+	width:250px;
+	float:left;
+	margin:0 15px 0 15px;
+	text-align:center;
+}
+.main  .contact h2{										/* imya v karte */
+	font-family:verdana, sans-serif;
+	font-size:28px;
+	line-height:24px;
+	font-weight:normal;
+	white-space:pre-wrap;
+	margin-bottom:10px;
+	margin-top:20px;
+	color:rgba(80,80,80,.7);
+}
+.main .contact .border{									/* krug photo */
+	border-radius:50%;
+}
+.main .contact span{										/* text under name */
+	font-family:verdana, sans-serif;
+	font-size:16px;
+	line-height:24px;
+	font-weight:bold;
+	white-space:pre-wrap;
+	color:rgba(80,80,80,.7);
+}
